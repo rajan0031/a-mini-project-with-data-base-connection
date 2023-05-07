@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big Button Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #big-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      #button {
+        font-size: 2em;
+        padding: 20px 40px;
+        border-radius: 10px;
+        background-color: #2196f3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      #button:hover {
+        background-color: #0d47a1;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="cont">
+      <h1>click the blue button to go to our sign up page</h1>
+    </div>
+    <div id="big-button">
+      <button id="button" onclick="alert()">Click Here</button>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      function alert() {
+        location.assign("http://localhost/signup%20form/");
+      }
+    </script>
+  </body>
+</html>
